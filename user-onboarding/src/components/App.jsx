@@ -134,7 +134,6 @@ function App() {
         onInputChange={onInputChange}
         onCheckboxChange={onCheckboxChange}
         onSubmit={onSubmit}
-        disabled={disabled}
         errors={formErrors}
       />
       {
