@@ -13,9 +13,6 @@ export default function UserForm(props) {
         <form className='form container' onSubmit={onSubmit}>
             <div className='form-group submit'>
                 <h2>Add a Friend</h2>
-
-                <button disabled={disabled}>submit</button>
-
                 <div className='errors'>
                     <div>{errors.first_name}</div>
                     <div>{errors.last_name}</div>
@@ -69,6 +66,8 @@ export default function UserForm(props) {
                         checked={values.tos}
                     />
                 </label>
+                <button disabled={disabled}>submit</button>
+
             </div>
         </form>
     )

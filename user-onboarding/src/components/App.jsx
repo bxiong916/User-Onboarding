@@ -5,6 +5,7 @@ import formSchema from './validation/FormSchema'
 import axios from 'axios'
 import * as Yup from 'yup'
 import '../App.css'
+
 const initialFormValues = {
   first_name: '',
   last_name: '',
@@ -134,7 +135,7 @@ function App() {
         onInputChange={onInputChange}
         onCheckboxChange={onCheckboxChange}
         onSubmit={onSubmit}
-        // disabled={disabled}
+        disabled={disabled}
         errors={formErrors}
       />
       {
